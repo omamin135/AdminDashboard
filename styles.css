@@ -65,6 +65,7 @@ ul > li > div {
     z-index: 1;
     box-shadow: 0px 0px 5px 5px var(--shadow);
     display: grid;
+    row-gap: 5px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     padding: 30px 50px;
@@ -73,6 +74,7 @@ ul > li > div {
 .search {
     display: flex;
     height: 25px;
+    margin: auto 0px;
 }
 
 .search > input {
@@ -90,6 +92,7 @@ ul > li > div {
 }
 
 .top-profile {
+    margin: auto 0px;
     height: 30%;
     display: flex;
     align-items: center;
@@ -159,11 +162,16 @@ ul > li > div {
 .main-content{
     background-color: var(--light-background);
     padding: 20px;
+    display: flex;
 }
 
 .body-header {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.card-content {
+    width: 75%;
 }
 
 .cards {
@@ -226,4 +234,75 @@ ul > li > div {
 .card .card-icon {
     height: 25px;
     width:auto;
+}
+
+.side-panel {
+    width: fit-content;
+}
+
+.announc-panel {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--shadow);
+    padding: 20px;
+    width: 200px;
+    margin-top: -8px;
+}
+
+.event-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.event-body {
+    font-size: 0.7rem;
+    margin-top: -10px;
+}
+
+.event-breakline {
+    height: 2px;
+    background-color: var(--light-background);
+}
+
+.trending-panel {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--shadow);
+    padding: 20px;
+    width: 200px;
+    margin-top: -8px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-img {
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.trending-item > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending .user-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.trending .text {
+    font-size: 0.8rem;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.trending-breakline {
+    margin: 20px 0px;
 }
