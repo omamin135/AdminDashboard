@@ -159,3 +159,17 @@ ul > li > div {
 .main-content{
     background-color: var(--light-background);
 }
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, clamp(300px, 40%, 400px));
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid blue;
+   
+    width: 80%;
+}
